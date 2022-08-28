@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+/* font-family: 'Montserrat', sans-serif; */
+/* Default settings */
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(218, 23%, 16%);
+    color: rgb(241, 234, 234);
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    width: 50%;
+}
+
+.title {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #727c8f;
+    padding: 3rem 1rem;
+}
+
+.password-field {
+    background-color: hsl(217, 19%, 24%);
+    color: #5c677d;
+    font-weight: 900;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    font-size: 2.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-area {
+    background-color: hsl(217, 19%, 24%);
+    padding: 4rem;
+}
+
+.settings-field {
+    background-color: hsl(217, 19%, 24%);
+    color: rgb(241, 234, 234);
+    font-size: 1.8rem;
+}
+
+.character-length {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.range-of-characters::-webkit-slider-thumb,
+.range-of-characters::-webkit-slider-thumb:hover {
+    -webkit-appearance: none;
+    height: 1.9rem;
+    width: 1.9rem;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: none;
+}
+
+
+
+.range-of-characters::-webkit-slider-runnable-track {
+    height: 0.8rem;
+    border-radius: 0;
+    background-color: hsl(218, 23%, 16%);
+    margin-bottom: 3rem;
+}
+
+.form-check-input {
+    transition: all .2s ease;
+}
+
+.form-check-input:not(:checked):hover {
+    background-color: #8d99ae;
+}
+
+.form-check-label {
+    margin-left: 1rem;
+}
+
+.strength-div {
+    background-color: hsl(218, 23%, 16%);
+    padding: 2rem 3rem;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.progress {
+    width: 80%;
+}
+
+.button-area {
+    margin-top: 3rem;
+    background-color: hsl(217, 19%, 24%);
+}
+
+.generate-btn {
+    background-color: hsl(150, 100%, 66%);
+    padding: 2rem 3rem;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    transition: all .2s ease;
+}
+
+.generate-btn:hover {
+    transform: translateY(-5px);
+}
