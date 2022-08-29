@@ -48,6 +48,16 @@ main {
     justify-content: space-between;
 }
 
+.copy-btn {
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+
+.copy-btn:hover {
+    transform: scale(1.2);
+    color: #8c929c;
+}
+
 .bottom-area {
     background-color: hsl(217, 19%, 24%);
     padding: 4rem;
@@ -128,4 +138,8 @@ main {
 
 .generate-btn:hover {
     transform: translateY(-5px);
+}
+
+.arrow-btn {
+    margin-left: 2rem;
 }

@@ -10,8 +10,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8c4bd008c3.js" crossorigin="anonymous"></script>
 
-
+    <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Password Generator</title>
 </head>
@@ -21,7 +22,9 @@
         <h1 class="title" id="title">Password Generator</h1>
         <div class="password-field" id="password-field">
             <div class="password" id="password">P4$5W0rD!</div>
-            <div class="copy-btn" id="copy-btn">sS</div>
+            <div class="copy-btn" id="copy-btn">
+                <i class="fa-solid fa-copy"></i>
+            </div>
         </div>
         <div class="bottom-area">
             <div class="settings-field" id="settings-field">
@@ -71,7 +74,8 @@
                 </div>
             </div>
             <div class="button-area" id="button-area">
-                <button class="generate-btn" id="generate-btn">GENERATE<i data-feather="arrow-right"></i></button>
+                <button class="generate-btn" id="generate-btn">GENERATE<i
+                        class="arrow-btn fa-solid fa-arrow-right-long"></i></button>
             </div>
         </div>
     </main>
