@@ -51,11 +51,11 @@ main {
 .copy-btn {
     transition: all .2s ease-in;
     cursor: pointer;
+    color: hsl(150, 100%, 66%);
 }
 
 .copy-btn:hover {
     transform: scale(1.2);
-    color: #8c929c;
 }
 
 .bottom-area {
@@ -76,6 +76,11 @@ main {
     margin-bottom: 3rem;
 }
 
+.character-length-number {
+    color: hsl(150, 100%, 66%);
+    font-weight: 700;
+}
+
 .range-of-characters::-webkit-slider-thumb,
 .range-of-characters::-webkit-slider-thumb:hover {
     -webkit-appearance: none;
@@ -87,7 +92,6 @@ main {
 }
 
 
-
 .range-of-characters::-webkit-slider-runnable-track {
     height: 0.8rem;
     border-radius: 0;
@@ -95,8 +99,17 @@ main {
     margin-bottom: 3rem;
 }
 
+.range-of-characters::-webkit-range-progress {
+    background-color: hsl(150, 100%, 66%);
+}
+
 .form-check-input {
     transition: all .2s ease;
+}
+
+.form-check-input:checked {
+    background-color: hsl(150, 73%, 48%);
+    border: none;
 }
 
 .form-check-input:not(:checked):hover {
@@ -119,6 +132,10 @@ main {
 
 .progress {
     width: 80%;
+}
+
+.progress-bar {
+    background-color: hsl(150, 73%, 48%);
 }
 
 .button-area {
