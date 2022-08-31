@@ -12,8 +12,8 @@
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/8c4bd008c3.js" crossorigin="anonymous"></script>
 
-    <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
     <title>Password Generator</title>
 </head>
 
@@ -21,22 +21,22 @@
     <main>
         <h1 class="title" id="title">Password Generator</h1>
         <div class="password-field" id="password-field">
-            <div class="password" id="password">P4$5W0rD!</div>
+            <div class="password" id="password">...</div>
             <div class="copy-btn" id="copy-btn">
                 <i class="fa-solid fa-copy"></i>
             </div>
         </div>
+
         <div class="bottom-area">
+
             <div class="settings-field" id="settings-field">
                 <div class="character-length" id="character-length">
                     <div class="character-length-text" id="character-length-text">
                         Character Length
                     </div>
-                    <div class="character-length-number" id="character-length-number">
-
-                    </div>
-
+                    <div class="character-length-number" id="character-length-number"></div>
                 </div>
+
                 <input type="range" class="form-range range-of-characters" id="range-of-characters" min="3" max="30"
                     step="1">
                 <div class="settings-checkboxes">
@@ -66,6 +66,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="strength-div" id="strength-div">
                 <div class="strength-title" id="strength-title">STRENGTH</div>
                 <div class="progress">

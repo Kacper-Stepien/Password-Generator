@@ -78,6 +78,7 @@ main {
 
 .character-length-number {
     color: hsl(150, 100%, 66%);
+    font-size: 3rem;
     font-weight: 700;
 }
 
@@ -159,4 +160,59 @@ main {
 
 .arrow-btn {
     margin-left: 2rem;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1300px) {
+    main {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width:980px) {
+    html {
+        font-size: 55%;
+    }
+
+    main {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .password-field {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .password {
+        order: 2;
+        margin-top: 1rem;
+    }
+
+    .strength-div {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .strength-title {
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    html {
+        font-size: 45%;
+    }
+
+    .password {
+        word-break: break-all;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .bottom-area {
+        padding: 1.5rem;
+    }
 }

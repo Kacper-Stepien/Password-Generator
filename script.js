@@ -20,14 +20,14 @@ const includeSymbols = document.getElementById('symbols');
 const strengthProgress = document.getElementById('progress-bar');
 const generateBtn = document.getElementById('generate-btn');
 
-characterLengthNumber.textContent = characterLengthRange.value;
+characterLengthNumber.textContent = characterLengthRange.value; // Set value of character length number to value of input range
 
 function generateNewPassword() {
     let allCharacters = [];
     let newPassword = '';
 
     if (!isAtLeastOneElementChecked()) {
-        updatePassword('');
+        updatePassword('...');
         return;
     };
 
@@ -43,7 +43,7 @@ function generateNewPassword() {
     if (includeSymbols.checked)
         allCharacters = allCharacters.concat(symbols);
 
-    allCharacters.sort(() => Math.random() - 0.5);
+    allCharacters.sort(() => Math.random() - 0.5);  // Shuffle the array with chars
 
     let letters = characterLengthRange.value;
 
@@ -73,7 +73,7 @@ function updateStrengthOfPassword() {
     complicating += includeNumbers.checked ? 0.29 : 0;
     complicating += includeSymbols.checked ? 0.32 : 0;
     strengthProgress.style.width = `${strength * 100 * complicating}%`;
-}
+};
 
 function isAtLeastOneElementChecked() {
     let checkboxes = document.querySelectorAll('.form-check-input');
@@ -82,7 +82,7 @@ function isAtLeastOneElementChecked() {
             return true;
     }
     return false;
-}
+};
 
 // Event Listeners
 copyBtn.addEventListener('click', copyToClipboard);
